@@ -180,14 +180,7 @@
                                             <label className="block text-sm font-medium text-indigo-200 mb-2">完整追蹤網址</label>
                                             <div className="relative"><textarea readOnly className="w-full h-32 px-4 py-3 bg-indigo-950 border border-indigo-800 rounded-xl text-indigo-50 font-mono text-sm resize-none outline-none" value={finalUrl || '等待輸入...'} /><button onClick={() => copyToClipboard(finalUrl, '網址')} disabled={!finalUrl} className="absolute bottom-3 right-3 bg-indigo-600 hover:bg-indigo-500 px-3 py-1.5 rounded-lg text-sm transition-colors">複製長網址</button></div>
                                         </div>
-                                        <div className="bg-indigo-800 rounded-xl p-4 border border-indigo-700 space-y-3">
-                                            <label className="block text-sm font-medium text-indigo-200">轉換免費短網址 (無廣告)</label>
-                                            <div className="flex flex-col md:flex-row gap-3">
-                                                <button onClick={() => handleExternalShortener('https://ppt.cc/')} disabled={!finalUrl} className="flex-1 bg-indigo-50 text-indigo-900 hover:bg-white px-4 py-2.5 rounded-lg font-semibold text-sm transition-colors">前往 ppt.cc</button>
-                                                <button onClick={() => handleExternalShortener('https://is.gd/')} disabled={!finalUrl} className="flex-1 bg-indigo-900 border border-indigo-600 text-indigo-100 hover:bg-indigo-700 px-4 py-2.5 rounded-lg font-semibold text-sm transition-colors">前往 is.gd</button>
-                                            </div>
-                                            <p className="text-xs text-indigo-300 text-center italic">點擊將自動複製長網址並跳轉</p>
-                                        </div>
+                                        
                                     </div>
                                     {copySuccess && <div className="mt-4 text-center text-sm text-emerald-400 bg-emerald-900/30 py-2 rounded-lg border border-emerald-800/50">{copySuccess}</div>}
                                 </div>
